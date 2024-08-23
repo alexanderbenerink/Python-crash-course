@@ -10,7 +10,7 @@ Een python verfrisser
 * OOP & URL get requests
 
 ### Collatz
-    Maak een funcite die het volgende doet gebasseerd op een getal:
+    Maak een functie die het volgende doet gebaseerd op een getal:
     - If the number is even, divide it by two.
     - If the number is odd, triple it and add one.
 
