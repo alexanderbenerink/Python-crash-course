@@ -42,7 +42,7 @@ Een python verfrisser
         l2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         # Output: [2, 4, 6, 8, 10]
 
-### Custom logger
+### Custom logger (Tip: Voeg deze later toe aan een andere functie.)
     - Gebruik de 'import logging' functie van Python om zo een logger te bouwen.
       de logger moet in ieder geval het volgende tonen:
       * Huidige tijd
