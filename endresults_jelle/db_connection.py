@@ -1,4 +1,5 @@
 import sqlite3
+from decorators import time_function
 
 def connect() -> sqlite3.Cursor:
     conn = sqlite3.connect("test.db")
@@ -19,6 +20,7 @@ def create_table(cur: sqlite3.Cursor) -> None:
                   saldo real)'''
     )
 
+@time_function
 def insert_records(cur: sqlite3.Cursor, table: str) -> None:
     cur.execute(f"""INSERT INTO {table}(rekeninghouder, rekeningnummer, saldo) VALUES (
             'J.W. Groothuysen', 'NL00 RABO 0123 1212 12', 999),
@@ -31,7 +33,7 @@ def insert_records(cur: sqlite3.Cursor, table: str) -> None:
     print(records)
 
 
-if __name__=="__main__":
+if __name__== "__main__":
     # Create the database and get a connection
     cursor = connect()
     
